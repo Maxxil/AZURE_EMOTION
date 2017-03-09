@@ -10,8 +10,6 @@ import config.CognitiveService;
 import java.util.ArrayList;
 import model.Image;
 import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 /**
  *

@@ -7,22 +7,15 @@ package config.text_recognition_service;
 
 import com.google.gson.Gson;
 import com.google.gson.internal.LinkedTreeMap;
-import com.sun.xml.internal.ws.client.AsyncResponseImpl;
 import config.CognitiveService;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.concurrent.Future;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.DetectedLanguage;
 import model.Documents;
 import model.TextRecognition;
-import model.TextRecognitionResponse;
 import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  *
@@ -33,6 +26,7 @@ public class TextRecognitionContext extends CognitiveService{
     private String LANGUAGES = "languages?numberOfLanguagesToDetect=1/";
     private TextRecognitionRequests request;
     private LinkedTreeMap<String , String> response;
+    
     public TextRecognitionContext()
     {
         super();        
